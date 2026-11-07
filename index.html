@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Style Haven Hub — Sneakers, Boots & Vintage Denim | Kathmandu</title>
+<meta name="description" content="Style Haven Hub is a sneaker, boot and vintage denim store in Kathmandu. Browse the wall, build your order and send it straight to the shop on WhatsApp, or call 9801245421.">
+<meta name="theme-color" content="#08080a">
+<meta property="og:title" content="Style Haven Hub — Kathmandu">
+<meta property="og:description" content="Sneakers, boots & vintage denim in the heart of Kathmandu. Browse the wall and order on WhatsApp.">
+<meta property="og:image" content="assets/hero.jpg">
+<link rel="icon" href="assets/logo.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/logo.png">
+<link rel="preload" as="image" href="assets/hero.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="is-loading">
+
+<a class="skip-link" href="#collection">Skip to the collection</a>
+
+<!-- ══════════ PRELOADER ══════════ -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader__inner">
+    <img class="loader__mark" src="assets/logo.png" alt="">
+    <div class="loader__name">
+      <span>STYLE</span><span>HAVEN</span><span>HUB</span>
+    </div>
+  </div>
+  <div class="loader__bar"><i id="loaderBar"></i></div>
+  <div class="loader__count"><span id="loaderCount">00</span><em>Kathmandu</em></div>
+</div>
+
+<!-- ══════════ CURSOR ══════════ -->
+<div class="cursor" id="cursor" aria-hidden="true"><span class="cursor__dot"></span><span class="cursor__ring"></span></div>
+
+<!-- ══════════ SCROLL PROGRESS ══════════ -->
+<div class="progress" aria-hidden="true"><i id="progressBar"></i></div>
+
+<!-- ══════════ NAV ══════════ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="brand" href="#home" aria-label="Style Haven Hub home">
+      <span class="brand__mark"><img src="assets/logo.png" alt="Style Haven Hub logo"></span>
+      <span class="brand__type">STYLE HAVEN <em>HUB</em></span>
+    </a>
+
+    <nav class="nav__links" aria-label="Main">
+      <a href="#collection" data-hover>Collection</a>
+      <a href="#lookbook" data-hover>Lookbook</a>
+      <a href="#store" data-hover>The Store</a>
+      <a href="#visit" data-hover>Visit</a>
+    </nav>
+
+    <div class="nav__actions">
+      <a class="nav__phone" href="tel:+9779801245421" data-hover>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.4 21 3 13.6 3 4.5c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.3 0 .7-.2 1l-2.3 1.8Z"/></svg>
+        <span>9801245421</span>
+      </a>
+      <button class="btn btn--cart" type="button" data-drawer-open data-hover>
+        Order <span class="btn__count" id="cartCountNav">0</span>
+      </button>
+      <button class="burger" type="button" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ══════════ MOBILE MENU ══════════ -->
+<div class="menu" id="menu" aria-hidden="true" inert>
+  <div class="menu__grid">
+    <nav class="menu__links" aria-label="Mobile">
+      <a href="#collection" style="--i:0"><em>01</em>Collection</a>
+      <a href="#lookbook" style="--i:1"><em>02</em>Lookbook</a>
+      <a href="#store" style="--i:2"><em>03</em>The Store</a>
+      <a href="#visit" style="--i:3"><em>04</em>Visit</a>
+    </nav>
+    <div class="menu__foot">
+      <p>Kathmandu, Nepal</p>
+      <a class="menu__call" href="tel:+9779801245421">+977 980-124-5421</a>
+      <div class="menu__row">
+        <a class="btn btn--ghost" href="https://wa.me/9779801245421" target="_blank" rel="noopener">WhatsApp</a>
+        <button class="btn" type="button" data-drawer-open>Start an order</button>
+      </div>
+    </div>
+  </div>
+  <div class="menu__bg" aria-hidden="true"></div>
+</div>
+
+<main id="main">
+<!-- ══════════ HERO ══════════ -->
+<section class="hero" id="home">
+  <div class="hero__media" id="heroMedia">
+    <img src="assets/hero.jpg" alt="The Style Haven Hub storefront in Kathmandu with mannequins on the balcony and the shop sign above the entrance" fetchpriority="high">
+  </div>
+  <div class="hero__shade"></div>
+  <div class="hero__grain" aria-hidden="true"></div>
+
+  <div class="hero__inner container">
+    <p class="hero__eyebrow" data-anim="fade">Kathmandu, Nepal <span>·</span> Sneakers &amp; Streetwear</p>
+
+    <h1 class="hero__title">
+      <span class="hero__line"><span class="hero__word">STYLE</span></span>
+      <span class="hero__line"><span class="hero__word">HAVEN</span></span>
+      <span class="hero__line"><span class="hero__word hero__word--outline">HUB<i class="hero__dot" aria-hidden="true"></i></span></span>
+    </h1>
+
+    <p class="hero__sub" data-anim="fade">Floor-to-ceiling sneakers, boots and vintage denim. Pick your pair, send your list on WhatsApp, and we’ll keep it aside.</p>
+
+    <div class="hero__cta" data-anim="fade">
+      <a class="btn btn--primary" href="#collection" data-hover data-magnet>
+        <span>Explore the wall</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a class="btn btn--outline" href="tel:+9779801245421" data-hover data-magnet>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.4 21 3 13.6 3 4.5c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.3 0 .7-.2 1l-2.3 1.8Z"/></svg>
+        <span>Call the store</span>
+      </a>
+    </div>
+  </div>
+
+  <a class="badge" href="#collection" aria-label="Browse the collection" data-hover>
+    <svg class="badge__ring" viewBox="0 0 200 200" aria-hidden="true">
+      <defs><path id="badgePath" d="M100,100 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0"/></defs>
+      <text><textPath href="#badgePath" startOffset="0">SNEAKERS · BOOTS · VINTAGE DENIM · KATHMANDU · </textPath></text>
+    </svg>
+    <span class="badge__core"><img src="assets/logo.png" alt=""></span>
+  </a>
+
+  <div class="hero__foot container">
+    <ul class="hero__facts">
+      <li><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11Zm0-8.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/></svg></span>Kathmandu, Nepal</li>
+      <li><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7v5l3 2M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>Open daily — call ahead to confirm</li>
+      <li><a href="tel:+9779801245421" data-hover><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.4 21 3 13.6 3 4.5c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.3 0 .7-.2 1l-2.3 1.8Z"/></svg></span>+977 980-124-5421</a></li>
+    </ul>
+    <a class="scroll-cue" href="#collection" aria-label="Scroll to collection">
+      <span>Scroll</span><i></i>
+    </a>
+  </div>
+</section>
+
+<!-- ══════════ MARQUEE ══════════ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__track">
+    <div class="ticker__group">
+      <span>SNEAKERS</span><i>✦</i><span class="is-outline">BOOTS</span><i>✦</i><span>VINTAGE DENIM</span><i>✦</i><span class="is-outline">NEW ARRIVALS</span><i>✦</i><span>KATHMANDU</span><i>✦</i><span class="is-outline">WALK IN</span><i>✦</i>
+    </div>
+    <div class="ticker__group">
+      <span>SNEAKERS</span><i>✦</i><span class="is-outline">BOOTS</span><i>✦</i><span>VINTAGE DENIM</span><i>✦</i><span class="is-outline">NEW ARRIVALS</span><i>✦</i><span>KATHMANDU</span><i>✦</i><span class="is-outline">WALK IN</span><i>✦</i>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════ COLLECTION ══════════ -->
+<section class="collection section" id="collection">
+  <div class="container">
+    <header class="section-head">
+      <div>
+        <p class="eyebrow" data-reveal><span class="eyebrow__num">01</span> The wall</p>
+        <h2 class="section-title" data-reveal>
+          <span>Every pair</span>
+          <span class="is-outline">on the shelf.</span>
+        </h2>
+      </div>
+      <p class="section-head__copy" data-reveal>Shot in-store. Tap any pair to look closer, add it to your order, then send the whole list to the shop on WhatsApp — or just call and ask.</p>
+    </header>
+
+    <div class="filters" data-reveal>
+      <div class="filters__chips" id="filters" role="group" aria-label="Filter the collection"></div>
+      <p class="filters__count" id="resultCount">73 styles</p>
+    </div>
+
+    <div class="grid" id="grid" aria-live="polite"></div>
+
+    <div class="grid__more">
+      <button class="btn btn--load" id="loadMore" type="button" data-hover>
+        <span>Load more pairs</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <p class="grid__hint">Ask for sizes, colours &amp; availability on WhatsApp.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ LOOKBOOK ══════════ -->
+<section class="lookbook" id="lookbook">
+  <div class="container lookbook__head">
+    <p class="eyebrow eyebrow--light" data-reveal><span class="eyebrow__num">02</span> In the wild</p>
+    <div class="lookbook__row">
+      <h2 class="section-title section-title--light" data-reveal>
+        <span>On the</span>
+        <span class="is-outline">street.</span>
+      </h2>
+      <p data-reveal>Drag the strip. This is the same wall you walk into — shot in Kathmandu, not in a studio.</p>
+    </div>
+  </div>
+
+  <div class="rail" id="rail">
+    <div class="rail__track" id="railTrack"></div>
+  </div>
+
+  <div class="container rail__ui">
+    <div class="rail__progress"><i id="railProgress"></i></div>
+    <div class="rail__nav">
+      <button type="button" class="rail__btn" id="railPrev" aria-label="Previous look" data-hover>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <span class="rail__hint">Drag / swipe</span>
+      <button type="button" class="rail__btn" id="railNext" aria-label="Next look" data-hover>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ THE STORE ══════════ -->
+<section class="store section" id="store">
+  <div class="container store__grid">
+    <div class="store__visual">
+      <figure class="store__fig store__fig--main" data-reveal="image">
+        <img src="assets/store.jpg" alt="Inside Style Haven Hub: sneakers stacked on shelves from floor to ceiling and customers talking with the owner" loading="lazy">
+        <figcaption>The wall, Kathmandu</figcaption>
+      </figure>
+      <figure class="store__fig store__fig--small" data-reveal="image">
+        <img src="assets/detail-boxes.jpg" alt="Sneakers displayed in clear stackable boxes beside a mannequin in denim" loading="lazy">
+      </figure>
+      <span class="store__seal" aria-hidden="true">STYLE<br>HAVEN<br>HUB</span>
+    </div>
+
+    <div class="store__copy">
+      <p class="eyebrow" data-reveal><span class="eyebrow__num">03</span> The store</p>
+      <h2 class="section-title" data-reveal>
+        <span>One roof.</span>
+        <span class="is-outline">Three labels.</span>
+      </h2>
+      <p class="store__lead" data-reveal>Style Haven Hub is a sneaker, boot and streetwear store in Kathmandu. High-tops, runners, court classics and chunky boots share the shelves with vintage denim and everyday fits.</p>
+      <p data-reveal>Look up at the sign and you’ll also find <strong>Smokers Fashion Addiction</strong> and <strong>Black-Bird Vintage Denim</strong> — three labels, one roof, one wall.</p>
+
+      <dl class="stats" data-reveal>
+        <div><dt data-count="73">0</dt><dd>Styles photographed</dd></div>
+        <div><dt data-count="3">0</dt><dd>Labels in store</dd></div>
+        <div><dt data-count="3">0</dt><dd>Collections</dd></div>
+        <div><dt data-count="1">0</dt><dd>Address to remember</dd></div>
+      </dl>
+
+      <ul class="labels" data-reveal>
+        <li><span>01</span>Style Haven Hub</li>
+        <li><span>02</span>Smokers Fashion Addiction</li>
+        <li><span>03</span>Black-Bird Vintage Denim</li>
+      </ul>
+
+      <a class="link-arrow" href="https://maps.app.goo.gl/HrgryFF21AvWYa2D8" target="_blank" rel="noopener" data-hover data-reveal>
+        <span>Find us on Google Maps</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ HOW TO ORDER ══════════ -->
+<section class="steps section" id="order">
+  <div class="container">
+    <div class="steps__head">
+      <div>
+        <p class="eyebrow eyebrow--light" data-reveal><span class="eyebrow__num">04</span> Ordering</p>
+        <h2 class="section-title section-title--light" data-reveal>
+          <span>Three steps.</span>
+          <span class="is-outline">No fuss.</span>
+        </h2>
+      </div>
+      <p data-reveal>Nothing to sign up for. Build a list on this page and send it to the shop — a real person replies on WhatsApp.</p>
+    </div>
+
+    <ol class="steps__grid">
+      <li class="step" data-reveal>
+        <span class="step__num">01</span>
+        <span class="step__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7.5 12 3l8 4.5v9L12 21l-8-4.5v-9Z M4 7.5 12 12l8-4.5M12 12v9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></span>
+        <h3>Pick your pairs</h3>
+        <p>Scroll the wall, tap anything you like and hit <strong>add to order</strong>. Add as many as you want.</p>
+      </li>
+      <li class="step" data-reveal>
+        <span class="step__num">02</span>
+        <span class="step__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9 9 0 0 1-3.9-.9L3 20l1-4.9A8.4 8.4 0 1 1 21 11.5Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+        <h3>Send it over</h3>
+        <p>Drop your name and number, then send the list to the store’s WhatsApp in one tap.</p>
+      </li>
+      <li class="step" data-reveal>
+        <span class="step__num">03</span>
+        <span class="step__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 13 3.5 3.5L19 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span>
+        <h3>Collect or arrange</h3>
+        <p>The team confirms sizes, then you pick up in-store or sort out delivery on the call.</p>
+      </li>
+    </ol>
+
+    <div class="steps__cta" data-reveal>
+      <button class="btn btn--primary btn--lg" type="button" data-drawer-open data-hover data-magnet>
+        <span>Start an order</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <a class="btn btn--outline btn--lg" href="tel:+9779801245421" data-hover data-magnet>Call 9801245421</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ VISIT ══════════ -->
+<section class="visit section" id="visit">
+  <div class="container">
+    <header class="section-head section-head--visit">
+      <div>
+        <p class="eyebrow" data-reveal><span class="eyebrow__num">05</span> Visit</p>
+        <h2 class="section-title" data-reveal>
+          <span>Come</span>
+          <span class="is-outline">through.</span>
+        </h2>
+      </div>
+      <p class="section-head__copy" data-reveal>Spot the mannequins on the balcony and the black sign with the blue-and-orange swirl.</p>
+    </header>
+
+    <div class="visit__grid">
+      <div class="visit__panel" data-reveal>
+        <div class="visit__block">
+          <p class="visit__label">Call the shop</p>
+          <a class="visit__phone" href="tel:+9779801245421" data-hover>980<wbr>124<wbr>5421</a>
+          <p class="visit__note">Tap the number to call · +977 country code for international</p>
+          <div class="visit__btns">
+            <a class="btn btn--primary" href="tel:+9779801245421" data-hover>Call now</a>
+            <a class="btn btn--wa" href="https://wa.me/9779801245421" target="_blank" rel="noopener" data-hover>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.5 14.1c-.2.6-1.2 1.2-1.7 1.2-.4 0-1 .1-3.2-.9-2.7-1.2-4.3-4-4.5-4.2-.1-.2-1-1.4-1-2.6 0-1.2.6-1.8.9-2 .2-.3.5-.4.7-.4h.5c.2 0 .4 0 .6.5l.8 1.9c0 .2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.1 1.4 2.4 1.5.2.1.4.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.8.9c.2.1.4.2.4.3.1.1.1.6-.1 1.2Z"/></svg>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="visit__block">
+          <p class="visit__label">Address</p>
+          <p class="visit__address">Style Haven Hub<br>Kathmandu 44600, Nepal</p>
+          <a class="link-arrow" href="https://maps.app.goo.gl/HrgryFF21AvWYa2D8" target="_blank" rel="noopener" data-hover>
+            <span>Open the exact pin</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <div class="visit__block visit__block--mini">
+          <div>
+            <p class="visit__label">Hours</p>
+            <p>Open daily · call ahead to confirm timing</p>
+          </div>
+          <div>
+            <p class="visit__label">Ordering</p>
+            <p>In-store, on call, or on WhatsApp</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="visit__map" data-reveal="image">
+        <iframe
+          title="Map showing Style Haven Hub in Kathmandu"
+          src="https://maps.google.com/maps?q=Style%20Haven%20Hub%2C%20Kathmandu&z=17&output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        <a class="visit__mapTag" href="https://maps.app.goo.gl/HrgryFF21AvWYa2D8" target="_blank" rel="noopener" data-hover>
+          <span class="pulse"></span> Style Haven Hub · Kathmandu
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="footer__top">
+      <a class="footer__brand" href="#home" aria-label="Style Haven Hub">
+        <span class="footer__wordmark">STYLE<br>HAVEN<br><em>HUB</em></span>
+      </a>
+      <div class="footer__cols">
+        <div>
+          <p class="footer__label">Shop</p>
+          <a href="#collection" data-hover>Collection</a>
+          <a href="#lookbook" data-hover>Lookbook</a>
+          <a href="#store" data-hover>The Store</a>
+        </div>
+        <div>
+          <p class="footer__label">Contact</p>
+          <a href="tel:+9779801245421" data-hover>+977 980-124-5421</a>
+          <a href="https://wa.me/9779801245421" target="_blank" rel="noopener" data-hover>WhatsApp</a>
+          <a href="https://maps.app.goo.gl/HrgryFF21AvWYa2D8" target="_blank" rel="noopener" data-hover>Google Maps</a>
+        </div>
+        <div>
+          <p class="footer__label">Store</p>
+          <p>Kathmandu, Nepal</p>
+          <p>Open daily</p>
+          <p>Smokers · Black-Bird</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__cta">
+      <p>Looking for a size?</p>
+      <a href="https://wa.me/9779801245421" target="_blank" rel="noopener" class="footer__big" data-hover data-magnet>ASK THE SHOP <span>↗</span></a>
+    </div>
+
+    <div class="footer__bottom">
+      <p>© <span id="year">2026</span> Style Haven Hub · Kathmandu</p>
+      <p class="footer__credit">Every photo shot on the shop floor.</p>
+      <button class="to-top" type="button" id="toTop" aria-label="Back to top" data-hover>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </div>
+</footer>
+
+<!-- ══════════ FLOATING ACTIONS ══════════ -->
+<div class="fab" aria-label="Quick contact">
+  <a class="fab__btn fab__btn--wa" href="https://wa.me/9779801245421" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" data-hover>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.5 14.1c-.2.6-1.2 1.2-1.7 1.2-.4 0-1 .1-3.2-.9-2.7-1.2-4.3-4-4.5-4.2-.1-.2-1-1.4-1-2.6 0-1.2.6-1.8.9-2 .2-.3.5-.4.7-.4h.5c.2 0 .4 0 .6.5l.8 1.9c0 .2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.1 1.4 2.4 1.5.2.1.4.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.8.9c.2.1.4.2.4.3.1.1.1.6-.1 1.2Z"/></svg>
+    <span>WhatsApp</span>
+  </a>
+  <a class="fab__btn fab__btn--call" href="tel:+9779801245421" aria-label="Call the store" data-hover>
+    <span class="ping"></span>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.4 21 3 13.6 3 4.5c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.3 0 .7-.2 1l-2.3 1.8Z"/></svg>
+    <span>Call</span>
+  </a>
+</div>
+
+<!-- ══════════ MOBILE ACTION BAR ══════════ -->
+<div class="mbar">
+  <a href="tel:+9779801245421" data-hover>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.4 21 3 13.6 3 4.5c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.3 0 .7-.2 1l-2.3 1.8Z"/></svg>Call
+  </a>
+  <a href="https://wa.me/9779801245421" target="_blank" rel="noopener" data-hover>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.5 14.1c-.2.6-1.2 1.2-1.7 1.2-.4 0-1 .1-3.2-.9-2.7-1.2-4.3-4-4.5-4.2-.1-.2-1-1.4-1-2.6 0-1.2.6-1.8.9-2 .2-.3.5-.4.7-.4h.5c.2 0 .4 0 .6.5l.8 1.9c0 .2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.1 1.4 2.4 1.5.2.1.4.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.8.9c.2.1.4.2.4.3.1.1.1.6-.1 1.2Z"/></svg>WhatsApp
+  </a>
+  <button type="button" data-drawer-open>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7.5 12 3l8 4.5v9L12 21l-8-4.5v-9Z M4 7.5 12 12l8-4.5M12 12v9" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+    Order <span class="mbar__count" id="cartCountBar">0</span>
+  </button>
+</div>
+
+<!-- ══════════ ORDER DRAWER ══════════ -->
+<div class="scrim" id="scrim"></div>
+
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle" aria-hidden="true" inert>
+  <div class="drawer__head">
+    <div>
+      <p class="drawer__eyebrow">Your list</p>
+      <h2 id="drawerTitle">Order sheet</h2>
+    </div>
+    <button class="icon-btn" type="button" data-drawer-close aria-label="Close order sheet" data-hover>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+
+  <div class="drawer__body">
+    <div class="drawer__empty" id="drawerEmpty">
+      <span class="drawer__emptyIco">＋</span>
+      <h3>Nothing here yet</h3>
+      <p>Tap <strong>add</strong> on any pair in the collection and it lands here.</p>
+      <button class="btn btn--outline btn--sm" type="button" data-drawer-close data-hover>Browse the wall</button>
+    </div>
+
+    <ul class="drawer__items" id="cartItems"></ul>
+
+    <form class="orderform" id="orderForm" novalidate>
+      <p class="orderform__title">Send it to the shop</p>
+      <div class="field">
+        <label for="ofName">Your name</label>
+        <input id="ofName" name="name" type="text" autocomplete="name" placeholder="e.g. Aayush" required>
+      </div>
+      <div class="field">
+        <label for="ofPhone">Phone / WhatsApp</label>
+        <input id="ofPhone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="98XXXXXXXX" required>
+      </div>
+      <div class="field">
+        <label for="ofNote">Sizes or notes <span>(optional)</span></label>
+        <textarea id="ofNote" name="note" rows="2" placeholder="Size 42, black colourway if available…"></textarea>
+      </div>
+      <p class="orderform__hint">No account, no payment here. This opens WhatsApp with your list pre-filled.</p>
+      <button class="btn btn--primary btn--block" type="submit" id="sendOrder" data-hover>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.5 14.1c-.2.6-1.2 1.2-1.7 1.2-.4 0-1 .1-3.2-.9-2.7-1.2-4.3-4-4.5-4.2-.1-.2-1-1.4-1-2.6 0-1.2.6-1.8.9-2 .2-.3.5-.4.7-.4h.5c.2 0 .4 0 .6.5l.8 1.9c0 .2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.1 1.4 2.4 1.5.2.1.4.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.8.9c.2.1.4.2.4.3.1.1.1.6-.1 1.2Z"/></svg>
+        <span>Send order on WhatsApp</span>
+      </button>
+      <a class="orderform__call" href="tel:+9779801245421" data-hover>or call the shop · 9801245421</a>
+    </form>
+  </div>
+</aside>
+
+<!-- ══════════ LIGHTBOX ══════════ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Product viewer" aria-hidden="true" inert>
+  <div class="lightbox__backdrop" data-lb-close></div>
+  <div class="lightbox__stage">
+    <button class="icon-btn lightbox__close" type="button" data-lb-close aria-label="Close viewer" data-hover>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+    </button>
+    <button class="lightbox__arrow lightbox__arrow--prev" type="button" id="lbPrev" aria-label="Previous pair" data-hover>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <figure class="lightbox__figure">
+      <img id="lbImg" src="" alt="">
+      <figcaption><span id="lbIndex">01</span> / <span id="lbTotal">73</span></figcaption>
+    </figure>
+    <button class="lightbox__arrow lightbox__arrow--next" type="button" id="lbNext" aria-label="Next pair" data-hover>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+  </div>
+  <div class="lightbox__panel">
+    <p class="lb__cat" id="lbCat">Sneaker</p>
+    <h3 id="lbName">—</h3>
+    <p class="lb__color" id="lbColor">—</p>
+    <div class="lb__actions">
+      <button class="btn btn--primary btn--sm" type="button" id="lbAdd" data-hover>Add to order</button>
+      <a class="btn btn--ghost btn--sm" href="https://wa.me/9779801245421" target="_blank" rel="noopener" data-hover>Ask on WhatsApp</a>
+    </div>
+    <p class="lb__note">Sizes run in-store. Ask about your size and the colours available on WhatsApp.</p>
+  </div>
+</div>
+
+<!-- ══════════ TOAST ══════════ -->
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/catalog.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
